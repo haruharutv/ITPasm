@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP&display=swap');
+html,body{
+ font-family: "IBM Plex Sans JP", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+ margin:0px;
+ padding:0px;
+ cursor:default;
+ user-select:none;
+background: rgb(76,117,161);
+background: linear-gradient(175deg, rgba(76,117,161,1) 0%, rgba(89,86,87,1) 100%);}
+.big_logo{
+text-align:center;
+ margin:200px;
+ width:calc(100% - 400px);
+ animation-name:fin;
+ animation-duration:3s;
+ animation-fill-mode:forwards;
+ opacity:0;
+ transition: all 2s;
+}
+.big_logo:hover{
+ transform: scale(1.2);
+ box-shadow: 0 0 8px gray;
+ opacity:1;
+}
+.pcont{
+margin:0px 200px 0px 200px;
+}
+.box{
+/* background:#fff;*/
+ width:100%;
+ height:100%;
+}
+@media screen and (max-width: 768px) {
+.big_logo{
+text-align:center;
+ margin:50px;
+ width:calc(100% - 100px);
+}
+
+ .pcont{
+  margin:0px 10px 0px 10px;
+ }
+}
+@keyframes fin{
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 0.8;
+  }
+}
+.btmb{
+ background:rgba(255,255,255,0.5);
+ padding:20px;
+ width:100%;
+}
